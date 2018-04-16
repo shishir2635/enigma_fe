@@ -6,6 +6,7 @@ $accent-color: #009688;
 	padding: 0;
 	margin: 0;
 }
+
 body{
 	/*background-color: #1C1D2F;*/
 	background-image: url("5.png");
@@ -22,29 +23,31 @@ body{
 	padding-top: 180px;
 }
 .option_text{
+	font-size: 0.5em;
 	color:#FAC801;
 }
 .nav_link{
 	color: green;
 }
 .option{
-	padding: 5px;
-	font-size: 1.5em;
 	border-radius: 8px;
 	border: 1px solid #D1D3D4;
 	background-color: #1C1D2F;
-	margin: 0 auto;
 }
 .option:hover{
 	background-color: #123456;
-	font-size: 1.7em;
+	font-size: 1.2em;
 	padding-left: 15px;
 }
 .option:hover{
-	padding-top: 7px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+input[type='radio']{
+	transition: all 0.3s;
 }
 input[type='radio']:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 .navbar{
 	background-color:  #1C1D2F;
@@ -66,14 +69,16 @@ input[type='radio']:hover {
 	font-size: 1.3em;
 }
 .white_div{
-	z-index: -1;
+	z-index:-1;
 	position: absolute;
-	top: 170px;
-	right: 325px;
-	height: 400px;
-	left: 100px;
-	width: 1150px;
-	background: white;
+	/*top: 170px;*/
+	/*right: 325px;*/
+	/*left: 280px;*/
+	/*width: 1050px;*/
+	/*margin: 100px;*/
+	height: 100%;
+	width: 100%;
+	background: teal;
 	border-radius: 6px;
 }
 progress{
@@ -168,92 +173,11 @@ tbody{
 
 
 /*Media Elements*/
-@media(max-width:350px){
-	.enigmatext{
-		display: block;
-	}
-	.question{
-		left: 80px;
-		padding-top: 80px;
-		font-size: 1.4em;
-		margin-left : 700px auto;
-	}
-	.white_div{
-		left: 0px;
-		top: 20px;
-		border-radius:3px;
-		opacity: 1;
-		height: 450px;
-		margin:10px;
-		width: 300px;
-	}
-	progress{
-		height: 15px;
-		margin-left: 5px;
-	}
-	.submitbutton{
-	height: 35px;
-	width: 200px;
-	margin-left: 30px;
-}
-	.formfields{
-		width: 250px;
-	}
 
-	.option{
-		width: 280px;
-	}
-}
+@media(max-width:480px){
 
-@media(min-width:350px) and (max-width:768px){
-	.enigmatext{
-		display: block;
-	}
-	.question{
-		left: 80px;
-		padding-top: 80px;
-		font-size: 1.4em;
-		margin-left : 700px auto;
-	}
-	.white_div{
-		left: 0px;
-		top: 20px;
-		border-radius:3px;
-		opacity: 1;
-		height: 450px;
-		margin:10px;
-		width: 360px;
-	}
-	progress{
-		height: 15px;
-		margin-left: 5px;
-	}
-	.submitbutton{
-	height: 35px;
-	width: 200px;
-	margin-left: 30px;
+.option:hover{
+	font-size: 0.9em;
+	color: green;
 }
-	.formfields{
-		width: 250px;
-	}
-
-	.option{
-		width: 280px;
-	}
-}
-@media(min-width:768px) and (max-width: 1200px){
-	.white_div{
-		margin: 5px;
-		left: 40px;		
-		width:700px;
-	}
-	.question{
-		margin-left: 100px;
-	}
-	.option{
-		margin-left: 200px;
-	}
-	progress{
-		margin-left: 0px;
-	}
 }
