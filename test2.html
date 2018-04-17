@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EDC Enigma</title>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--   	<link rel="stylesheet" type="text/css" href="style2.css">
+  	<link rel="stylesheet" type="text/css" href="style.css"> -->
+  	<link rel="stylesheet" type="text/css" href="style3.css">
+  	<link rel="stylesheet" type="text/css" href="style4.css">
+   	<link rel="stylesheet"
+  	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-image: url(5.png);">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="white_div">
+				<div class="container-fluid">
+					<div class="row col-md-8 col-md-offset-2">
+						<h2 >This is a test question This is a test question This is a test question This is a test question</h2> 
+					</div>
+					<form>
+					<ul class="list" style="list-style-type: none;">
+					<div class="row" >
+					
+						<div class="col-md-8 col-md-offset-2">
+							<div class="col-md-6">
+								 <li class="list__item">
+   								 <input type="radio" class="radio-btn" name="choise" id="a-opt" />
+   								<label for="a-opt" class="label">Hello this is </label>
+  								</li>
+							</div>
+							<div class="col-md-6">
+								 <li class="list__item">
+   								 <input type="radio" class="radio-btn" name="choise" id="b-opt" />
+   								<label for="b-opt" class="label">new sjdnjws</label>
+  								</li>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<div class="col-md-6">
+								 <li class="list__item">
+   								 <input type="radio" class="radio-btn" name="choise" id="c-opt" />
+   								<label for="c-opt" class="label">asd ajfa</label>
+  								</li>
+							</div>
+							<div class="col-md-6">
+								 <li class="list__item">
+   								 <input type="radio" class="radio-btn" name="choise" id="d-opt" />
+   								<label for="d-opt" class="label">fmdaklflk</label>
+  								</li>
+							</div>
+						</div>
+						
+					</div>
+				</ul>
+
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						 <progress value="0" max="10" id="progressBar"></progress>
+					</div>
+				</div>
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+var timeleft = 10;
+var questionTimer = setInterval(function(){
+  document.getElementById("progressBar").value = 10 - --timeleft;
+  if(timeleft <= 0)
+    document.getElementById("question_form").submit()
+},1000)
+</script>
+</body>
+</html>
